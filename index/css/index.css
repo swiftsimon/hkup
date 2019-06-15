@@ -1,0 +1,64 @@
+*,
+*::after,
+*::before {
+  margin: 0rem;
+  padding: 0rem;
+  box-sizing: inherit; }
+
+html {
+  font-size: 56.25%; }
+
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.7;
+  color: #777;
+  padding: 3rem;
+  box-sizing: border-box; }
+
+@keyframes inFromLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem); }
+  60% {
+    transform: translateX(3rem); }
+  100% {
+    opacity: 1;
+    transform: translateX(0rem); } }
+
+@keyframes inFromRight {
+  0% {
+    opacity: 0;
+    transform: translateX(10rem); }
+  60% {
+    transform: translateX(-3rem); }
+  100% {
+    opacity: 1;
+    transform: translateX(0rem); } }
+
+@keyframes inFromBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(4rem); }
+  100% {
+    opacity: 1;
+    transform: translateY(0rem); } }
+
+.header-primary {
+  color: #fff;
+  text-transform: uppercase;
+  backface-visibility: inherit;
+  margin: 1.5rem; }
+  .header-primary--main {
+    display: block;
+    font-size: 5rem;
+    font-weight: 400;
+    letter-spacing: 1.5rem;
+    animation: inFromLeft 1.5s; }
+  .header-primary--sub {
+    display: block;
+    font-size: 2rem;
+    font-weight: 400;
+    letter-spacing: 2.15rem;
+    animation: inFromRight 1.5s; }

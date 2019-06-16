@@ -1,20 +1,20 @@
 *,
 *::after,
 *::before {
-  margin: 0rem;
-  padding: 0rem;
+  margin: 0px;
+  padding: 0px;
   box-sizing: inherit; }
 
 html {
   font-size: 56.25%; }
 
 body {
-  font-family: "Lato", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 400;
   font-size: 1.6rem;
   line-height: 1.7;
   color: #777;
-  padding: 3rem;
+  /* padding: 3rem; */
   box-sizing: border-box; }
 
 @keyframes inFromLeft {
@@ -45,20 +45,74 @@ body {
     opacity: 1;
     transform: translateY(0rem); } }
 
+
+.header {
+  height: 95vh;
+  position: relative;
+
+  background-image: linear-gradient(to right top,
+   rgba(255, 192, 203, 0.8), 
+   rgba(255, 192, 203, 0.8)), 
+   url(./img/header_background.jpg);
+  background-size: cover;
+  background-position: top;
+
+  /* clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%); */
+}
+
+.logo-box {
+  position: absolute;
+  top: 3rem;
+  left: 3rem;
+
+  font-size: 4rem;
+  color: white;
+}
+
+.header__center-text-box {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 .header-primary {
-  color: #fff;
+  color: white;
   text-transform: uppercase;
   backface-visibility: inherit;
   margin: 1.5rem; }
-  .header-primary--main {
-    display: block;
-    font-size: 5rem;
-    font-weight: 400;
-    letter-spacing: 1.5rem;
-    animation: inFromLeft 1.5s; }
-  .header-primary--sub {
-    display: block;
-    font-size: 2rem;
-    font-weight: 400;
-    letter-spacing: 2.15rem;
-    animation: inFromRight 1.5s; }
+
+.header-primary--main {
+  display: block;
+  font-size: 5rem;
+  font-weight: 400;
+  letter-spacing: 1rem;
+  animation: inFromLeft 1.5s; }
+
+.header-primary--sub {
+  display: block;
+  font-size: 2rem;
+  font-weight: 400;
+  letter-spacing: .5rem;
+  animation: inFromRight 1.5s; }
+
+.header-sub-logo {
+  width: 5rem;
+  height: 5rem;
+}
+
+.header-primary--sub-follow {
+  position: absolute;
+  bottom: 2rem;
+  left: 10rem;
+  display: block;
+  font-size: 2rem;
+  font-weight: 400;
+  letter-spacing: .2rem;
+}
+
+.header-primary--sub-follow-span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

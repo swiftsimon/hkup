@@ -74,6 +74,8 @@ body {
   top: 60%;
   left: 50%;
   transform: translate(-50%, -50%);
+  width: 90%;
+  text-align: center;
 }
 
 .header-primary {
@@ -94,7 +96,8 @@ body {
   font-size: 2rem;
   font-weight: 400;
   letter-spacing: .5rem;
-  animation: inFromRight 1.5s; }
+  animation: inFromRight 1.5s; 
+}
 
 .header-sub-logo {
   width: 5rem;
@@ -102,17 +105,32 @@ body {
 }
 
 .header-primary--sub-follow {
+  width: 90%;
   position: absolute;
-  bottom: 2rem;
-  left: 10rem;
-  display: block;
+  bottom: 10%;
+  left: 10%;
+  /* transform: translate(-50%, -50%); */
+  text-align: left;
+  display: flex;
+  align-items: center;
   font-size: 2rem;
   font-weight: 400;
   letter-spacing: .2rem;
 }
 
+@media only screen and (max-width: 500px) {
+  .header-primary--sub-follow {
+    flex-direction: column;
+    left: 0%;
+  }
+}
+
 .header-primary--sub-follow-span {
+  /* display: flex;
+  align-items: center; */
+}
+
+.sub-insta-box {
   display: flex;
   align-items: center;
-  justify-content: center;
 }
